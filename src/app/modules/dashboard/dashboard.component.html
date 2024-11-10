@@ -1,30 +1,102 @@
 <div
-  class=" absolute inset-0 -z-10 h-full w-full flex justify-center items-center text-center [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
-  <div
-    class="w-[400px] max-w-screen-lg sm:w-[750px] sm:h-[500px]  2xl:w-[900px] 2xl:h-[600px] grid md:grid md:grid-cols-1 xl:grid-cols-4 gap-4 grid-rows-9 text-slate-300 font-mono">
+  class="md:absolute inset-0 -z-10 h-full w-full flex justify-center items-center text-center [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
+
+  <!-- mobile -->
+  <div class="text-white md:hidden max-w-screen-sm p-5">
 
     <!-- Quote section -->
     <div
-      class="row-span-3 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190] font-serif text-lg px-2 2xl:text-2xl pt-5 md:pt-2 2xl:pt-3 italic">
+      class="bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190] font-serif p-3 mb-4 italic font-mono">
+      "Learning never stops, and hard work unlocks new possibilities"</div>
+
+    <div class="grid grid-cols-3 gap-4 mb-4">
+      <!-- Socials section -->
+      <div
+        class="bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190]">
+        <app-socials></app-socials>
+      </div>
+
+      <!-- About Me section -->
+      <div
+        class="bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190] text-sm p-2 col-span-2 font-mono">
+        I've learned Fullstack Development for 2 years, focusing on frontend and backend technologies for web
+        application development.
+      </div>
+    </div>
+
+    <div class="grid grid-cols-4 gap-4 mb-4">
+      <!-- photo -->
+      <div
+        class="bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190] col-span-2">
+        <app-photo class="w-full h-full"></app-photo>
+      </div>
+      <!-- education -->
+      <div
+        class="bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190] col-span-2 font-mono">
+        <div class="mb-5">Education</div>
+        <app-education></app-education>
+      </div>
+    </div>
+
+    <!-- experience -->
+    <div
+      class="bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190] mb-4 font-mono">
+      <div>Experience</div>
+      <app-experience></app-experience>
+    </div>
+
+    <!-- projects -->
+    <div
+      class="bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190] mb-4 px-4 pb-4 font-mono">
+      <div class="mb-4">My Project</div>
+      <app-projects></app-projects>
+    </div>
+
+    <div class="grid grid-cols-4 gap-4">
+      <!-- skills -->
+      <div
+        class="bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190] mb-4 col-span-2">
+        <div class="font-mono mb-4">Skills</div>
+        <app-skills></app-skills>
+      </div>
+
+      <!-- resume -->
+      <div
+        class="bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190] mb-4 col-span-2">
+        <div class="font-mono">My Resume</div>
+        <div class="flex justify-center items-center mt-16">
+          <app-resume></app-resume>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- web -->
+  <div
+    class="hidden md:max-w-screen-lg md:w-[750px] md:h-[500px] 2xl:w-[900px] 2xl:h-[600px] md:grid md:grid-cols-4 md:gap-4 md:grid-rows-9 text-slate-300 font-mono">
+
+    <!-- Quote section -->
+    <div
+      class="md:row-span-3 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190] font-serif text-sm md:text-xl px-2 2xl:text-2xl pt-5 md:pt-2 2xl:pt-3 italic">
       "Learning never stops, and hard work unlocks new possibilities"
     </div>
 
     <!-- Socials section -->
     <div
-      class="row-span-2 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190]">
+      class="md:row-span-2 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190]">
       <app-socials></app-socials>
     </div>
 
     <!-- Photo section -->
     <div
-      class="row-span-5 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190] transition duration-300 hover:scale-105">
+      class="md:row-span-5 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190] transition duration-300 hover:scale-105">
       <app-photo class="w-full h-full"></app-photo>
     </div>
 
     <!-- About Me section -->
     <div
-      class="row-span-3 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190] font-mono 2xl:pt-2">
-      About Me
+      class="md:row-span-3 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190] font-mono 2xl:pt-2">
+      <div class="hidden md:block">About Me</div>
       <div class="font-normal text-xs px-2 py-3 md:py-1 md:px-1 2xl:px-2 2xl:py-5">
         <!-- Untuk ukuran 2xl -->
         <div class="block">
@@ -36,38 +108,39 @@
 
     <!-- Education section -->
     <div
-      class="row-span-5 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190]">
-      <div> Education</div>
+      class="md:row-span-5 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190]">
+      <div>Education</div>
       <app-education></app-education>
     </div>
 
     <!-- Skills section -->
     <div
-      class="row-span-11 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190]">
+      class="md:row-span-11 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190]">
       <div>Skills</div>
       <app-skills></app-skills>
     </div>
 
     <!-- Projects section -->
     <div
-      class="row-span-11 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190]">
+      class="md:row-span-11 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190]">
       <div class="mb-3 2xl:mb-5">My Project</div>
       <app-projects></app-projects>
     </div>
 
     <!-- Resume section -->
     <div
-      class="row-span-4 md:row-span-2 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190]">
+      class="sm:row-span-4 md:row-span-2 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190]">
       <div>My Resume</div>
       <app-resume class="flex justify-center items-center mt-0 md:mt-3"></app-resume>
     </div>
 
     <!-- Experience section -->
     <div
-      class="row-span-7 col-span-2 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190]">
+      class="md:row-span-7 md:col-span-2 bg-indigo-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 text-gray-300 shadow-[0px_0px_10px_0px_#434190]">
       <div class="mb-2">Experience</div>
       <app-experience></app-experience>
     </div>
 
   </div>
+
 </div>
