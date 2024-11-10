@@ -1,7 +1,9 @@
-<div *ngFor="let e of experiences" class="text-left pb-2 2xl:pb-5">
-  <div class="ml-2">
-    <div class="text-xs font-semibold">• {{e.name}} - {{e.program}}</div>
-    <div class="text-xs text-slate-500">{{e.time}}</div>
+<div *ngFor="let e of experiences" class="text-left pb-2 2xl:pb-3">
+  <div class="p-5 md:p-0 md:ml-2">
+    <div class="hidden md:block md:text-xs font-semibold">• {{e.name}} - {{e.program}}</div>
+    <div class="md:hidden md:text-xs font-semibold">{{e.name}}</div>
+    <div class="md:hidden md:text-xs font-semibold">{{e.program}}</div>
+    <div class="text-md md:text-xs text-slate-500">{{e.time}}</div>
   </div>
 </div>
 

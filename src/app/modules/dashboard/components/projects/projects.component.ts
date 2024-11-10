@@ -10,27 +10,33 @@ export class ProjectsComponent implements OnInit {
   projects = [
     {
       "name": "Sistem Persediaan",
-      "url": "https://github.com/rizkitaufikanindhita/sistemPersediaan"
+      "url": "https://github.com/rizkitaufikanindhita/sistemPersediaan",
+      "icon": "../../../../../assets/inventory.svg"
     },
     {
       "name": "Booking Ruang Rapat",
-      "url": "https://github.com/rizkitaufikanindhita/bookingruangrapatFE"
+      "url": "https://github.com/rizkitaufikanindhita/bookingruangrapatFE",
+      "icon": "../../../../../assets/ruangrapat.svg"
     },
     {
       "name": "Counter App",
-      "url": "https://github.com/rizkitaufikanindhita/wordAnalytics"
+      "url": "https://github.com/rizkitaufikanindhita/wordAnalytics",
+      "icon": "../../../../../assets/counter.svg"
     },
     {
       "name": "Mini Absen",
-      "url": "https://github.com/rizkitaufikanindhita/Fullstack_MiniAbsen"
+      "url": "https://github.com/rizkitaufikanindhita/Fullstack_MiniAbsen",
+      "icon": "../../../../../assets/absen.svg"
     },
     {
       "name": "Medium Clone",
-      "url": "https://github.com/rizkitaufikanindhita/MediumClone"
+      "url": "https://github.com/rizkitaufikanindhita/MediumClone",
+      "icon": "../../../../../assets/medium.svg"
     },
     {
       "name": "Password Manager",
-      "url": "https://github.com/rizkitaufikanindhita/Cohort_Practice/tree/main/passwordManager"
+      "url": "https://github.com/rizkitaufikanindhita/Cohort_Practice/tree/main/passwordManager",
+      "icon": "../../../../../assets/password.svg"
     }
   ]
 
