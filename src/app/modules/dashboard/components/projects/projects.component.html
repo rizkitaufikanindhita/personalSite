@@ -1,8 +1,7 @@
 <div>
   <div class="md:hidden text-xs overflow-x-auto flex space-x-4 px-4">
-    <div *ngFor="let p of projects"
-      class="bg-indigo-950 w-fit shrink-0 p-4 rounded-md text-left flex justify-between font-mono text-white">
-      <a href={{p.url}} target="_blank"><img src={{p.icon}} class="filter invert brightness-0 w-12 h-12"></a>
+    <div *ngFor="let p of projects" class="bg-indigo-950 w-fit shrink-0 p-4 rounded-md text-left font-mono text-white">
+      <a href={{p.url}} target="_blank"><img src={{p.icon}} class="filter invert brightness-0 w-12 h-12 mb-3"></a>
     </div>
   </div>
 
